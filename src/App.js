@@ -1,7 +1,8 @@
 import { Routes, Route } from 'react-router-dom';
 import Home from './componets/routes/home/home.component';
 import MainHeader from './componets/routes/MainHeader/MainHeader';
-import Signup from './componets/routes/Signup';
+
+import Authentication from './componets/routes/Authentication/Authentication';
 
 const Shop = () => <h1>Shop</h1>;
 const App = () => {
@@ -20,8 +21,8 @@ const App = () => {
           element={<Shop />}
         />
         <Route
-          path='/sign-up'
-          element={<Signup />}
+          path='/auth'
+          element={<Authentication />}
         />
       </Route>
     </Routes>
